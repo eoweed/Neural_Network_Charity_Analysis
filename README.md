@@ -23,26 +23,36 @@ The data was preprocessed for the model by dropping irrelevant columns, binning 
     - EIN
     - NAME
 #### Compiling, Training, and Evaluating the Model:
-***Original Model*** Accuracy: 0.7235
+##### ***Original Model*** Accuracy: 0.7235
 
-***Optimization Attempt 1:*** Accuracy: 0.6949
+##### ***Optimization Attempt 1:*** Accuracy: 0.6949
 ###### I removed additional columns from the dataset (EIN, NAME, APPLICATION_TYPE, and CLASSIFICATION) to determine if those features were confusing the model, however the resulting accuracy is less than the accuracy from the original model.
+![1](/assets/images/tux.png)
 
-***Optimization Attempt 2:*** Accuracy: 0.7242
+##### ***Optimization Attempt 2:*** Accuracy: 0.7242
 ###### I increased the number of neuron units in the model to 150 units for Layer 1 and 100 units for Layer 2 so that the model might better understand the complex relationships within the dataset. The resulting accuracy was slightly higher than the accuracy in the original model.
+![2](/assets/images/tux.png)
 
-***Optimization Attempt 3:*** Accuracy: 0.7236
+##### ***Optimization Attempt 3:*** Accuracy: 0.7236
 ###### I increased the number of epochs while training the model to 70 epochs so that the model could have more attempts at learning from the data. This only increased the accuracy by .0001 from the original model.
+![3](/assets/images/tux.png)
 
-***Optimization Attempt 4:*** Accuracy: 0.7238
+##### ***Optimization Attempt 4:*** Accuracy: 0.7238
 ###### I changed the activation function in the hidden layers of the model to the Tanh activation function to determine if it might be better at transforming the data and defining the output of the model. The resulting accuracy only had a slight increase compared to the original model.
+![4](/assets/images/tux.png)
 
-***Optimization Attempt 5:*** Accuracy: 0.7224
+##### ***Optimization Attempt 5:*** Accuracy: 0.7224
 ###### I added 4 hidden layers and increased the number of epochs to 70 epochs, so that the model might be able to better understand the complexity of the data by having more neuron layers to pass through, and increased attempts at learning from the data. However, this resulted in a decrease in accuracy compared to the original model. 
+![5](/assets/images/tux.png)
 
 ###### Unfortunately, I was not able to increase the accuracy to the target rate of 0.75 in any of these optimization attempts.
 
 
 ### Summary:
+Overall, more techniques to optimize the model will need to be used in order to reach the target accuracy rate. The 2nd optimization attempt had the highest accuracy but was still not accurate enough. A different model may need to be used to better understand the relationships in the dataset. For example, we may need to create a different neural network model that has the ideal number of neuron units and layers. Changing the number of neuron units in the 2nd optimization attempt resulted in higher accuracy, so it may be worth it to continue adjusting that number. Finding the ideal number of hidden layers in the model may also help the performance. Lastly, it may be necessary to preprocess the dataset with different methods of handling the categorical data. It is possible that outliers or unnecessary categories are confusing the current model. 
 
 ### Software:
+###### Python 3.7.13
+###### Scikit-Learn 1.0
+###### Pandas 1.3.5
+###### Tensorflow 2.10.0

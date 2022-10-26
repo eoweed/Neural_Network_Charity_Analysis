@@ -1,11 +1,11 @@
 # Neural_Network_Charity_Analysis
 
-### Overview:
+## Overview:
 The purpose of this project is to build a neural network model that will predict whether applicants will be successful if they receive investment funds from the AlphabetSoup foundation. 
 Data from past applicants, who were funded by AlphabetSoup, is used with the keras sequential model to help predict whether future applicants will be successful or not. The initial model is also tweaked for optimization to try and improve the accuracy of the predictions. 
 
-### Results:
-#### Data Preprocessing:
+## Results:
+### Data Preprocessing:
 The data was preprocessed for the model by dropping irrelevant columns, binning categorical data into fewer categories, using OneHotEncoder to encode the categorical data, and splitting the resulting dataset into training and testing data. 
 - Target Variable: 
     - IS_SUCCESSFUL
@@ -22,7 +22,7 @@ The data was preprocessed for the model by dropping irrelevant columns, binning 
 - Irrelevant Variables:
     - EIN
     - NAME
-#### Compiling, Training, and Evaluating the Model:
+### Compiling, Training, and Evaluating the Model:
 ##### ***Original Model*** Accuracy: 0.7235
 
 ##### ***Optimization Attempt 1:*** Accuracy: 0.6949
@@ -48,10 +48,10 @@ The data was preprocessed for the model by dropping irrelevant columns, binning 
 ###### Unfortunately, I was not able to increase the accuracy to the target rate of 0.75 in any of these optimization attempts.
 
 
-### Summary:
+## Summary:
 Overall, more techniques to optimize the model will need to be used in order to reach the target accuracy rate. The 2nd optimization attempt had the highest accuracy but was still not accurate enough. A different model may need to be used to better understand the relationships in the dataset. For example, we may need to create a different neural network model that has the ideal number of neuron units and layers. Changing the number of neuron units in the 2nd optimization attempt resulted in higher accuracy, so it may be worth it to continue adjusting that number. Finding the ideal number of hidden layers in the model may also help the performance. Lastly, it may be necessary to preprocess the dataset with different methods of handling the categorical data. It is possible that outliers or unnecessary categories are confusing the current model. 
 
-### Software:
+## Software:
 ###### Python 3.7.13
 ###### Scikit-Learn 1.0
 ###### Pandas 1.3.5

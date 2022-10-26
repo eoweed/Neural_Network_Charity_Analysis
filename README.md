@@ -27,23 +27,23 @@ The data was preprocessed for the model by dropping irrelevant columns, binning 
 
 ##### ***Optimization Attempt 1:*** Accuracy: 0.6949
 ###### I removed additional columns from the dataset (EIN, NAME, APPLICATION_TYPE, and CLASSIFICATION) to determine if those features were confusing the model, however the resulting accuracy is less than the accuracy from the original model.
-![1](/assets/images/tux.png)
+![1](https://github.com/eoweed/Neural_Network_Charity_Analysis/blob/main/Images/1.png)
 
 ##### ***Optimization Attempt 2:*** Accuracy: 0.7242
 ###### I increased the number of neuron units in the model to 150 units for Layer 1 and 100 units for Layer 2 so that the model might better understand the complex relationships within the dataset. The resulting accuracy was slightly higher than the accuracy in the original model.
-![2](/assets/images/tux.png)
+![2](https://github.com/eoweed/Neural_Network_Charity_Analysis/blob/main/Images/2.png)
 
 ##### ***Optimization Attempt 3:*** Accuracy: 0.7236
 ###### I increased the number of epochs while training the model to 70 epochs so that the model could have more attempts at learning from the data. This only increased the accuracy by .0001 from the original model.
-![3](/assets/images/tux.png)
+![3](https://github.com/eoweed/Neural_Network_Charity_Analysis/blob/main/Images/3.png)
 
 ##### ***Optimization Attempt 4:*** Accuracy: 0.7238
 ###### I changed the activation function in the hidden layers of the model to the Tanh activation function to determine if it might be better at transforming the data and defining the output of the model. The resulting accuracy only had a slight increase compared to the original model.
-![4](/assets/images/tux.png)
+![4](https://github.com/eoweed/Neural_Network_Charity_Analysis/blob/main/Images/4.png)
 
 ##### ***Optimization Attempt 5:*** Accuracy: 0.7224
 ###### I added 4 hidden layers and increased the number of epochs to 70 epochs, so that the model might be able to better understand the complexity of the data by having more neuron layers to pass through, and increased attempts at learning from the data. However, this resulted in a decrease in accuracy compared to the original model. 
-![5](/assets/images/tux.png)
+![5](https://github.com/eoweed/Neural_Network_Charity_Analysis/blob/main/Images/5.png)
 
 ###### Unfortunately, I was not able to increase the accuracy to the target rate of 0.75 in any of these optimization attempts.
 

@@ -49,7 +49,15 @@ The data was preprocessed for the model by dropping irrelevant columns, binning 
 
 
 ## Summary:
-Overall, more techniques to optimize the model will need to be used in order to reach the target accuracy rate. The 2nd optimization attempt had the highest accuracy but was still not accurate enough. A different model may need to be used to better understand the relationships in the dataset. For example, we may need to create a different neural network model that has the ideal number of neuron units and layers. Changing the number of neuron units in the 2nd optimization attempt resulted in higher accuracy, so it may be worth it to continue adjusting that number. Finding the ideal number of hidden layers in the model may also help the performance. Lastly, it may be necessary to preprocess the dataset with different methods of handling the categorical data. It is possible that outliers or unnecessary categories are confusing the current model. 
+Overall, more techniques to optimize the model will need to be used in order to reach the target accuracy rate. The 2nd optimization attempt had the highest accuracy but was still not accurate enough. 
+Additional optimization techniques include:
+
+-	Continuing to search for the ideal number of neuron units and layers.
+
+-	Preprocessing the dataset with different methods of handling the categorical data.
+
+Lastly, it may be necessary to use a different machine learning model. The RandomForestClassifier can predict categorical outputs from complex datasets just like the neural network model, and the hyperparameters can also be adjusted to improve the model. However, the RandomForestClassifier can be more easily interpreted, and it may help improve the accuracy of the predictions if we can better understand how the model is making decisions.
+
 
 ## Software:
 ###### Python 3.7.13

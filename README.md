@@ -56,7 +56,7 @@ Additional optimization techniques include:
 
 -	Preprocessing the dataset with different methods of handling the categorical data.
 
-Lastly, it may be necessary to use a different machine learning model. The RandomForestClassifier can predict categorical outputs from complex datasets just like the neural network model, and the hyperparameters can also be adjusted to improve the model. However, the RandomForestClassifier can be more easily interpreted, and it may help improve the accuracy of the predictions if we can better understand how the model is making decisions.
+Lastly, it may be necessary to use a different machine learning model. The RandomForestClassifier can predict categorical outputs from complex datasets just like the neural network model, and the hyperparameters can also be adjusted to improve the model. However, the RandomForestClassifier can be more easily interpreted, and it may help improve the accuracy of the predictions if we can better understand how the model is making its decisions.
 
 
 ## Software:
